@@ -1,6 +1,7 @@
 {
   "name": "jenkins-automation",
   "version": "0.0.0",
+  "sideEffects": false,
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -9,7 +10,7 @@
     "test": "ng test",
     "dev:ssr": "ng run jenkins-automation:serve-ssr",
     "serve:ssr": "node dist/jenkins-automation/server/main.js",
-    "build:prod": "node --max-old-space-size=8192 ./node_modules/@angular/cli/bin/ng build --configuration=production",
+    "build:prod": "node --max-old-space-size=8192 ./node_modules/@angular/cli/bin/ng build",
     "build:ssr": "ng build && ng run jenkins-automation:server",
     "prerender": "ng run jenkins-automation:prerender"
   },
